@@ -1,0 +1,153 @@
+* {
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* html {
+    height: 100%;
+} */
+body {
+    margin: 0;
+    background-color: #333;
+
+}
+
+.body {
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.showroom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    top: 0;
+    cursor: pointer;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.carDetail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #818181;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    opacity: 0.9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.showroom:hover .carDetail {
+    height: 25%;
+}
+
+.showroom img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 600px) {
+    .text-block {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%
+}
+
+/* Slideshow container */
+.bodyNews {
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    background-color: #ffc145
+}
+
+/* .searchOnHeader input[type=text] {
+    position: fixed;
+    right: 56px;
+    padding-right: 56px;
+    margin-top: 20px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    z-index: 5;
+}
+.searchOnHeader button {
+    position: fixed;
+    right: 16px;
+    padding: 10px 16px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+} */
+/* .showroom :hover {
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+} */
+/* .showroom1 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background: aliceblue;
+    transition: transform 2s;
+    animation-name: logo;
+    animation-duration: 16s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+} */
+/* @keyframes logo {
+    0%   { left:0px; top:0px;}
+    25%  { left:50%; top:0px;}
+    50%  {left:100%; top:0px;}
+    75%  { left:50%; top:0px;}
+    100% { left:-10px; top:0px;} 
+}  //animation */
+/* .showroom1:hover {
+    opacity: 0.9;
+} */
